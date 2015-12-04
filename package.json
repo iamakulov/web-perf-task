@@ -1,0 +1,15 @@
+{
+  "name": "web-perf-hometask",
+  "version": "1.0.0",
+  "description": "The hometask for the RollingScopes Website Loading Performance lecture",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamakulov/web-perf-task.git"
+  },
+  "author": "Ivan Akulov <gxoptg@gmail.com> (http://ivanakulov.name/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamakulov/web-perf-task/issues"
+  },
+  "homepage": "https://github.com/iamakulov/web-perf-task#readme"
+}
