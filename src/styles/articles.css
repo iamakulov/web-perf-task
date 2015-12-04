@@ -1,0 +1,38 @@
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+.article h1 {
+    margin-bottom: 0.25em;
+
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+
+    line-height: 1.1;
+}
+
+.cover {
+    margin-bottom: 20px;
+}
+
+.cover__image {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.advertisement {
+    max-width: 100%;
+    margin: 50px auto 0;
+    padding: 0 20px;
+}
+
+.advertisement__element {
+    border: 1px solid #ccc;
+}
