@@ -42,7 +42,7 @@ gulp.task('watch', function () {
 });
 
 // Start a local server
-gulp.task('connect', ['build'], function () {
+gulp.task('start', ['build'], function () {
     connect.server({
         root: 'dist',
         livereload: true,
@@ -50,4 +50,4 @@ gulp.task('connect', ['build'], function () {
     });
 });
 
-gulp.task('default', ['build', 'watch', 'connect']);
+gulp.task('default', ['build', 'watch', 'start']);
