@@ -7,7 +7,12 @@
     font-size: 16px;
 }
 
-.article h1 {
+.article {
+    margin-top: 60px;
+}
+
+.article__header {
+    margin-top: 0;
     margin-bottom: 0.25em;
 
     font-family: 'PT Serif', serif;
@@ -24,7 +29,7 @@
     display: block;
     width: 100%;
     border-radius: 4px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
 }
 
 .advertisement {
