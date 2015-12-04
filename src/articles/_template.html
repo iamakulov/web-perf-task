@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title><%= contents.title %></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/articles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700itali&subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic">
+</head>
+<body>
+    <div class="content">
+        <% if (contents.cover) { %>
+            <div class="cover">
+                <img class="cover__image" src="<%= contents.cover %>">
+            </div>
+        <% } %>
+        <div class="share">
+            <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+            <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+            <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter" data-counter=""></div>
+        </div>
+        <div class="article">
+            <%= contents.body %>
+        </div>
+        <div class="advertisement">
+
+        </div>
+    </div>
+    <script src="/ads/ads.js"></script>
+</body>
+</html>
