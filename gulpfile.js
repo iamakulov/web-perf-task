@@ -6,7 +6,8 @@ var wrap = require('gulp-wrap');
 
 var paths = {
     articles: 'src/**/*.md',
-    assets: ['src/**/*', '!src/**/*.md']
+    articleTemplate: 'src/articles/_template.html',
+    assets: ['src/**/*', '!src/**/*.md', '!src/articles/_template.html']
 };
 
 // Compile articles
@@ -36,7 +37,7 @@ gulp.task('build', ['articles', 'assets']);
 
 // Track file changes
 gulp.task('watch', function () {
-    gulp.watch(paths.articles, ['articles']);
+    gulp.watch([paths.articles, paths.articleTemplate], ['articles']);
     gulp.watch(paths.assets, ['assets']);
 });
 
